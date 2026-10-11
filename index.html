@@ -18,6 +18,9 @@
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -35,10 +38,10 @@
             margin-bottom: 15px;
         }
         header p {
-            font-size: 1.2rem;
-            max-width: 600px;
+            font-size: 1.1rem;
+            max-width: 700px;
             margin: 0 auto 25px auto;
-            opacity: 0.9;
+            opacity: 0.95;
         }
         .container {
             max-width: 1000px;
@@ -89,6 +92,28 @@
             color: var(--primary-color);
             margin-bottom: 10px;
         }
+        .privacy-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 50px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .privacy-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .privacy-section h3 {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        .privacy-section p {
+            color: #475569;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
         footer {
             text-align: center;
             padding: 30px;
@@ -109,7 +134,6 @@
         <h1>CrowdFix</h1>
         <p>CrowdFix هي المنصة المجتمعية الذكية لطلب وتقديم خدمات الصيانة والمهن الحرة في منطقتك بكل سهولة وأمان. يربط التطبيق بين المستخدمين وأفضل الفنيين ومزودي الخدمات في مجالات السباكة، الكهرباء، النجارة، والصيانة العامة، مع توفير نظام تواصل مباشر، إشعارات فورية، ودفع آمن يدعم المحافظ الإلكترونية المحلية والبطاقات البنكية.</p>
         <div class="hero-buttons">
-            <!-- زر التحميل المباشر لملف الـ APK الخاص بك -->
             <a href="https://drive.google.com/uc?export=download&id=1tV102vIlBZb3x8D72-KSAuQ57j_FZyGq" class="btn btn-primary">تحميل التطبيق (APK)</a>
             <a href="#" class="btn btn-secondary">قريباً على Google Play</a>
         </div>
@@ -131,11 +155,30 @@
                 <p>شحن رصيد سهل وسريع باستخدام البطاقات البنكية ومحافظ فودافون كاش الإلكترونية.</p>
             </div>
         </div>
+
+        <!-- قسم سياسة الخصوصية -->
+        <div class="privacy-section" id="privacy">
+            <h2>سياسة الخصوصية (Privacy Policy)</h2>
+            <p>تاريخ آخر تحديث: أكتوبر 2026</p>
+            <p>نحن في <strong>CrowdFix</strong> نلتزم بحماية خصوصية مستخدمينا وضمان أمان بياناتهم الشخصية. توضح هذه السياسة كيفية جمع البيانات واستخدامها وحمايتها عند استخدامك للتطبيق والموقع.</p>
+
+            <h3>1. المعلومات التي نجمعها:</h3>
+            <p>نجمع المعلومات التي تقدمها لنا مباشرة مثل: الاسم، رقم الهاتف، والبريد الإلكتروني، بالإضافة إلى موقعك الجغرافي عند طلب الخدمة لربطك بأقرب فني أو مقدم خدمة.</p>
+
+            <h3>2. كيفية استخدام البيانات:</h3>
+            <p>تُستخدم البيانات لتقديم خدمات الصيانة والمهن الحرة، تسهيل عملية التواصل، تحسين تجربة المستخدم، ومعالجة المعاملات المالية والدفع بأمان.</p>
+
+            <h3>3. أمان وحماية البيانات:</h3>
+            <p>نطبق أعلى معايير الأمان والتشفير لحماية بياناتك من الوصول غير المصرح به، ولا نقوم بيع أو مشاركة بياناتك الشخصية مع أي أطراف ثالثة لأغراض تسويقية.</p>
+
+            <h3>4. التواصل والدعم:</h3>
+            <p>إذا كان لديك أي استفسار حول سياسة الخصوصية، يمكنك التواصل معنا عبر البريد الإلكتروني الخاص بالدعم الفني للتطبيق.</p>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2026 CrowdFix. جميع الحقوق محفوظة.</p>
-        <p style="margin-top: 10px;"><a href="#">سياسة الخصوصية</a> | <a href="#">اتصل بنا</a></p>
+        <p style="margin-top: 10px;"><a href="#privacy">سياسة الخصوصية</a></p>
     </footer>
 
 </body>
