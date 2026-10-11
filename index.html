@@ -62,6 +62,8 @@
             text-decoration: none;
             font-weight: bold;
             transition: background 0.3s;
+            border: none;
+            cursor: pointer;
         }
         .btn-primary {
             background-color: #ffffff;
@@ -74,6 +76,17 @@
             background-color: rgba(255, 255, 255, 0.2);
             color: white;
             border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .btn-submit {
+            background-color: var(--primary-color);
+            color: white;
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background-color: var(--primary-dark);
         }
         .features {
             display: grid;
@@ -92,27 +105,43 @@
             color: var(--primary-color);
             margin-bottom: 10px;
         }
-        .privacy-section {
+        .section-box {
             background: var(--card-bg);
             padding: 30px;
             border-radius: 12px;
             margin-top: 50px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-        .privacy-section h2 {
+        .section-box h2 {
             color: var(--primary-color);
             margin-bottom: 15px;
             font-size: 1.5rem;
         }
-        .privacy-section h3 {
+        .section-box h3 {
             margin-top: 15px;
             margin-bottom: 5px;
             font-size: 1.1rem;
         }
-        .privacy-section p {
+        .section-box p {
             color: #475569;
             font-size: 0.95rem;
             margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
         }
         footer {
             text-align: center;
@@ -125,6 +154,7 @@
         footer a {
             color: #38bdf8;
             text-decoration: none;
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -156,8 +186,30 @@
             </div>
         </div>
 
+        <!-- قسم اتصل بنا -->
+        <div class="section-box" id="contact">
+            <h2>اتصل بنا - الدعم الفني</h2>
+            <p>هل لديك استفسار أو تتطلب مساعدة؟ يمكنك إرسال رسالة مباشرة إلينا وسيتم الرد عليك في أسرع وقت:</p>
+            
+            <form onsubmit="sendEmail(event)">
+                <div class="form-group">
+                    <label for="name">الاسم:</label>
+                    <input type="text" id="name" required placeholder="أدخل اسمك الكريم">
+                </div>
+                <div class="form-group">
+                    <label for="email">بريدك الإلكتروني:</label>
+                    <input type="email" id="email" required placeholder="example@mail.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">الرسالة:</label>
+                    <textarea id="message" rows="4" required placeholder="اكتب استفسارك أو رسالتك هنا..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">إرسال الرسالة</button>
+            </form>
+        </div>
+
         <!-- قسم سياسة الخصوصية -->
-        <div class="privacy-section" id="privacy">
+        <div class="section-box" id="privacy">
             <h2>سياسة الخصوصية (Privacy Policy)</h2>
             <p>تاريخ آخر تحديث: أكتوبر 2026</p>
             <p>نحن في <strong>CrowdFix</strong> نلتزم بحماية خصوصية مستخدمينا وضمان أمان بياناتهم الشخصية. توضح هذه السياسة كيفية جمع البيانات واستخدامها وحمايتها عند استخدامك للتطبيق والموقع.</p>
@@ -169,17 +221,34 @@
             <p>تُستخدم البيانات لتقديم خدمات الصيانة والمهن الحرة، تسهيل عملية التواصل، تحسين تجربة المستخدم، ومعالجة المعاملات المالية والدفع بأمان.</p>
 
             <h3>3. أمان وحماية البيانات:</h3>
-            <p>نطبق أعلى معايير الأمان والتشفير لحماية بياناتك من الوصول غير المصرح به، ولا نقوم بيع أو مشاركة بياناتك الشخصية مع أي أطراف ثالثة لأغراض تسويقية.</p>
+            <p>نطبق أعلى معايير الأمان والتشفير لحماية بياناتك من الوصول غير المصرح به، ولا نقوم ببيع أو مشاركة بياناتك الشخصية مع أي أطراف ثالثة لأغراض تسويقية.</p>
 
             <h3>4. التواصل والدعم:</h3>
-            <p>إذا كان لديك أي استفسار حول سياسة الخصوصية، يمكنك التواصل معنا عبر البريد الإلكتروني الخاص بالدعم الفني للتطبيق.</p>
+            <p>إذا كان لديك أي استفسار حول سياسة الخصوصية، يمكنك التواصل معنا عبر نموذج "اتصل بنا" أعلاه أو عبر البريد الإلكتروني الخاص بالدعم الفني: amr.atef1205@gmail.com.</p>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2026 CrowdFix. جميع الحقوق محفوظة.</p>
-        <p style="margin-top: 10px;"><a href="#privacy">سياسة الخصوصية</a></p>
+        <p style="margin-top: 10px;">
+            <a href="#privacy">سياسة الخصوصية</a> | 
+            <a href="#contact">اتصل بنا</a>
+        </p>
     </footer>
+
+    <script>
+        function sendEmail(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            
+            var subject = encodeURIComponent("استفسار من موقع CrowdFix: " + name);
+            var body = encodeURIComponent("الاسم: " + name + "\nالبريد الإلكتروني: " + email + "\n\nالرسالة:\n" + message);
+            
+            window.location.href = "mailto:amr.atef1205@gmail.com?subject=" + subject + "&body=" + body;
+        }
+    </script>
 
 </body>
 </html>
