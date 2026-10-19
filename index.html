@@ -16,12 +16,18 @@
 <body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="w-full py-6 px-8 flex justify-between items-center max-w-6xl mx-auto">
+    <header class="w-full py-6 px-8 flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto gap-4">
         <div class="flex items-center space-x-3 space-x-reverse">
             <div class="bg-emerald-500 text-slate-900 font-black text-xl px-3 py-2 rounded-xl shadow-lg">CF</div>
             <span class="text-2xl font-bold tracking-wide">CrowdFix</span>
         </div>
-        <div>
+        <div class="flex items-center space-x-3 space-x-reverse">
+            <!-- زر تحميل الويندوز -->
+            <a href="https://drive.google.com/file/d/1uKOTmrVHcUHFFugUO6emkDmUy2wTMIuE/view?usp=sharing" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-semibold transition shadow-md flex items-center gap-2">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3.449L9.75 20.338H24L14.25 3.449H0zm16.5 0h-3l9.75 16.889h3L16.5 3.449zM5.25 20.338l-1.5 2.598h16.5l1.5-2.598H5.25z"/></svg>
+                تحميل للكمبيوتر (EXE)
+            </a>
+            <!-- زر تحميل الموبايل -->
             <a href="https://drive.google.com/file/d/1yG053O5ihlA8mK8QJjklldU3xaE5cSGQ/view?usp=sharing" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-xl font-semibold transition shadow-md">
                 تحميل التطبيق (APK)
             </a>
@@ -41,10 +47,18 @@
         </p>
         
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <!-- زر الموبايل الرئيسي -->
             <a href="https://drive.google.com/file/d/1yG053O5ihlA8mK8QJjklldU3xaE5cSGQ/view?usp=sharing" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
-                📥 تحميل نسختك المباشرة (APK)
+                📥 تحميل نسخة الأندرويد (APK)
+            </a>
+            <!-- زر الكمبيوتر الرئيسي -->
+            <a href="https://drive.google.com/file/d/1uKOTmrVHcUHFFugUO6emkDmUy2wTMIuE/view?usp=sharing" target="_blank" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-blue-600/20 transition transform hover:-translate-y-0.5">
+                💻 تحميل نسخة الكمبيوتر (EXE)
             </a>
         </div>
+        <p class="text-slate-500 text-sm mt-4">
+            * ملاحظة لنسخة الكمبيوتر: عند التشغيل لأول مرة، قد يظهر تحذير من Windows (SmartScreen). اضغط على <b>More info</b> ثم <b>Run anyway</b>.
+        </p>
     </main>
 
     <!-- Features / Highlights -->
