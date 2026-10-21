@@ -3,33 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrowdFix - منصة بلاغات وتطوير المجتمع المحلي</title>
+    <title>CrowdFix - منصة الخدمات الذكية</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-        }
+        body { font-family: 'Cairo', sans-serif; }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
 
     <!-- Header / Navbar -->
-    <header class="w-full py-6 px-8 flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto gap-4">
+    <header class="w-full py-4 px-8 flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto gap-4">
         <div class="flex items-center space-x-3 space-x-reverse">
-            <div class="bg-emerald-500 text-slate-900 font-black text-xl px-3 py-2 rounded-xl shadow-lg">CF</div>
-            <span class="text-2xl font-bold tracking-wide">CrowdFix</span>
+            <!-- اللوجو هنا -->
+            <img src="logo.png" alt="CrowdFix Logo" class="h-16 w-auto object-contain">
         </div>
         <div class="flex items-center space-x-3 space-x-reverse">
             <!-- زر تحميل الويندوز -->
             <a href="https://drive.google.com/file/d/1uKOTmrVHcUHFFugUO6emkDmUy2wTMIuE/view?usp=sharing" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-semibold transition shadow-md flex items-center gap-2">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3.449L9.75 20.338H24L14.25 3.449H0zm16.5 0h-3l9.75 16.889h3L16.5 3.449zM5.25 20.338l-1.5 2.598h16.5l1.5-2.598H5.25z"/></svg>
-                تحميل للكمبيوتر (EXE)
+                تحميل للكمبيوتر
             </a>
-            <!-- زر تحميل الموبايل -->
-            <a href="https://drive.google.com/file/d/1yG053O5ihlA8mK8QJjklldU3xaE5cSGQ/view?usp=sharing" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-xl font-semibold transition shadow-md">
-                تحميل التطبيق (APK)
+            <!-- زر تحميل الأندرويد (جوجل بلاي) -->
+            <a href="https://play.google.com/apps/internaltest/4699786095015290869" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-xl font-semibold transition shadow-md">
+                متاح على Google Play
             </a>
         </div>
     </header>
@@ -37,23 +35,34 @@
     <!-- Hero Section -->
     <main class="max-w-4xl mx-auto px-6 py-12 text-center my-auto">
         <div class="inline-block bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            منصة مجتمعية ذكية لإدارة البلاغات والخدمات
+            منصة مجتمعية ذكية لطلب وتقديم الخدمات
         </div>
-        <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-6 leading-tight">
             شارك في تطوير مدينتك وكن جزءاً من <span class="text-emerald-400">التغيير الإيجابي</span>
         </h1>
-        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            تطبيق CrowdFix يتيح لك رصد البلاغات المحلية، تتبع حالة الصيانة والخدمات، والتواصل الفعّال لحل مشكلات الحي بكل سهولة وشفافية.
+        
+        <!-- النص الجديد -->
+        <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+            CrowdFix هي المنصة المجتمعية الذكية لطلب وتقديم خدمات الصيانة والمهن الحرة في منطقتك بكل سهولة وأمان. يربط التطبيق بين المستخدمين وأفضل الفنيين ومزودي الخدمات في مجالات السباكة، الكهرباء، النجارة، والصيانة العامة، مع توفير نظام تواصل مباشر، إشعارات فورية، ودفع آمن يدعم المحافظ الإلكترونية المحلية والبطاقات البنكية.
         </p>
         
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <!-- زر الموبايل الرئيسي -->
-            <a href="https://drive.google.com/file/d/1yG053O5ihlA8mK8QJjklldU3xaE5cSGQ/view?usp=sharing" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
-                📥 تحميل نسخة الأندرويد (APK)
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 flex-wrap">
+            <!-- زر الأندرويد الرئيسي (Google Play) -->
+            <a href="https://play.google.com/apps/internaltest/4699786095015290869" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-emerald-600/20 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+                تحميل نسخة الأندرويد
             </a>
+
+            <!-- زر الآيفون (قريباً) -->
+            <button disabled class="w-full sm:w-auto bg-slate-800 text-slate-500 font-bold text-lg px-8 py-4 rounded-2xl cursor-not-allowed border border-slate-700 flex items-center justify-center gap-2">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.4 12.36,4.16 13,3.5Z"/></svg>
+                نسخة iOS (قريباً)
+            </button>
+
             <!-- زر الكمبيوتر الرئيسي -->
-            <a href="https://drive.google.com/file/d/1uKOTmrVHcUHFFugUO6emkDmUy2wTMIuE/view?usp=sharing" target="_blank" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-blue-600/20 transition transform hover:-translate-y-0.5">
-                💻 تحميل نسخة الكمبيوتر (EXE)
+            <a href="https://drive.google.com/file/d/1uKOTmrVHcUHFFugUO6emkDmUy2wTMIuE/view?usp=sharing" target="_blank" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-blue-600/20 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3.449L9.75 20.338H24L14.25 3.449H0zm16.5 0h-3l9.75 16.889h3L16.5 3.449zM5.25 20.338l-1.5 2.598h16.5l1.5-2.598H5.25z"/></svg>
+                تحميل نسخة الكمبيوتر
             </a>
         </div>
         <p class="text-slate-500 text-sm mt-4">
@@ -81,8 +90,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="w-full py-6 text-center text-slate-500 text-sm border-t border-slate-800 mt-12">
+    <footer class="w-full py-6 text-center text-slate-500 text-sm border-t border-slate-800 mt-12 flex flex-col items-center gap-2">
         <p>&copy; 2026 CrowdFix. جميع الحقوق محفوظة.</p>
+        <!-- لينك سياسة الخصوصية -->
+        <a href="privacy.html" class="text-emerald-500 hover:text-emerald-400 transition">سياسة الخصوصية (Privacy Policy)</a>
     </footer>
 
 </body>
